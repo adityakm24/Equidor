@@ -1,5 +1,5 @@
 # Equidor
-Equidor is a simple web application to monitor students while taking online tests. It uses 3 types of inputs: 
+Equidor is a simple web application to monitor students while taking online tests. It uses 4 types of inputs from 2 sources: 
 1) web-cam video and mic audio
 2) screen capture video and audio 
 
