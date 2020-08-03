@@ -7,4 +7,8 @@ Different classes have different tables that store student's login credentials (
 **Face tracking AI and recording features**<br>
 The Face tracking models were made and trained with the help of teachablemachine.com and it classifies the student as copying when the student is not present in front of the monitor or he's looking away from the monitor. There's a Mozilla Screen capture API(for screen recording), and Video.js webcam recorder. All of these files/features are now present in the folder named working.<br>
 **File upload**<br>
-The files being uploaded by students and being viewed by the teachers is still in works however, there's a small demo of video uploads is the folder named uploads.
+The files being uploaded by students and being viewed by the teachers is still in works however, there's a small demo of video uploads is the folder named uploads.<br><br>
+
+**Installation**<br>
+simple add all these files to the public folder and open phpmyAdmin and exectude the MySQL commands in your database to creat tables. Then configure your server in all the config.php files to connect the website to your database. 
+
