@@ -35,7 +35,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, username, password FROM Xllcuser WHERE username = ?";
+
+        $sql = "SELECT id, username, password FROM XIICuser WHERE username = ?";
+
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -117,7 +119,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="XllC-register.php">Sign up now</a>.</p>
+
+            <p>Don't have an account? <a href="XIIC-register.php">Sign up now</a>.</p>
+
         </form>
     </div>    
 </body>
