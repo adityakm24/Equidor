@@ -1,0 +1,49 @@
+body{
+  background:rgb(255, 255, 255);
+  font-family:Arial;
+  color:rgb(255, 255, 255);
+}
+
+p{
+  margin:160px 0 0 20px;
+  font-size:12px;
+  color:#CCC;
+}
+
+ol, ul{
+  font-size:12px;
+  color:#CCC;
+}
+
+span {
+  display:inline-block;
+  margin:10px; 
+  color:#888;
+}
+
+span.active {
+  color:#FCC30A;
+}
+
+#wrapper {
+  position:relative;
+  margin:30px 0 0 30px;
+}
+
+#box {
+  position:absolute;
+  width:100px;
+  height:100px;
+  background:#0CB558;
+  border-radius:100%;
+}
+
+#spot {
+  position:relative;
+  width:30px;
+  height:30px;
+  top:2px;
+  left:2px;
+  background:#FFF;
+  border-radius:100%;
+}

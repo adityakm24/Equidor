@@ -1,35 +1,14 @@
 # Equidor
-Equidor is a simple web application to monitor students while taking online tests. It uses 4 types of inputs from 2 sources: 
-1) web-cam video and mic audio
-2) screen capture video and audio 
+Equidor is a simple web application to monitor students while taking online tests. It uses 3 types of input  web-cam screen capture audio input Based on these 3 inputs, with the help of complex Machine Learning Algorithms, it flags students which the system thinks is cheating and notifies the teachers.<br><br>
 
-Based on these inputs, with the help of complex Machine Learning Algorithms, it flags students which the system thinks is cheating and notifies the teachers.
+**Log in**<br>
+The log In starts of by asking whether it's a teacher or a student and respectively it redirects them to their respective login pages.
+Different classes have different tables that store student's login credentials (For example: In my case, I have five different classes and there five different tables in my database for students log in and one single table common for all the teacher's login.<br>
+**Face tracking AI and recording features**<br>
+The Face tracking models were made and trained with the help of teachablemachine.com and it classifies the student as copying when the student is not present in front of the monitor or he's looking away from the monitor. There's a Mozilla Screen capture API(for screen recording), and Video.js webcam recorder. All of these files/features are now present in the folder named working.<br>
+**File upload**<br>
+The files being uploaded by students and being viewed by the teachers is still in works however, there's a small demo of video uploads is the folder named uploads.<br><br>
 
-# INSTALLATION
+**Installation**<br>
+simply add all these files to the public folder and open phpmyAdmin and exectude the MySQL commands in your database to creat tables. Then configure your server in all the config.php files to connect the website to your database. 
 
-*WAMP SERVER*
-Install WAMP SERVER with the latest verion of php and mysqli. Execute the following MySQL commands to set up the database and tables: 
--- Database: `user-registration`
-
--- Table structure for table `tbl_member`
-
-CREATE TABLE `tbl_member` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(200) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Indexes for table `tbl_member`
-ALTER TABLE `tbl_member`
-  ADD PRIMARY KEY (`id`);
-  
--- AUTO_INCREMENT for table `tbl_member`
-
-ALTER TABLE `tbl_member`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-  
-  # Face Recognition
-  
-  The web-cam recording and screen capture files are incuded in the 'over' folder.
