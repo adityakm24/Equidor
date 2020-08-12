@@ -4,7 +4,9 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: logdin/XIID1.php");
+
+    header("location: logdin/XIID2.php");
+
     exit;
 }
  
@@ -35,7 +37,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, username, password FROM Xlld2user WHERE username = ?";
+
+        $sql = "SELECT id, username, password FROM xiid2user WHERE username = ?";
+
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -117,7 +121,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="XllD2-register.php">Sign up now</a>.</p>
+
+            <p>Don't have an account? <a href="XIID2-register.php">Sign up now</a>.</p>
+
         </form>
     </div>    
 </body>
