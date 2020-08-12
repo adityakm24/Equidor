@@ -36,7 +36,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
 
-        $sql = "SELECT id, username, password FROM XIIAuser WHERE username = ?";
+        $sql = "SELECT id, username, password FROM xiiauser WHERE username = ?";
+
 
         
         if($stmt = mysqli_prepare($link, $sql)){

@@ -9,6 +9,7 @@ $_SESSION = array();
 session_destroy();
  
 // Redirect to login page
-echo "logged out!";
+echo "<h3>logged out!</h3>";
+echo "<h3><a href='../../../index.html'>HOME</a></h3>";
 exit;
 ?>
