@@ -7,11 +7,11 @@ CREATE TABLE users (
 
 --given below are table names and above is template--
 --students login--
-Xllauser
-Xllbuser
-Xllcuser
-Xlld1user
-Xlld2user
+xiiauser
+xiibuser
+xiicuser
+xiid1user
+xiid2user
 
 --teachers student data--
 xiiastud
