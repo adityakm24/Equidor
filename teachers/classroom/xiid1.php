@@ -30,5 +30,32 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <a href="../logout.php" class="btn btn-danger">Sign Out of Your Account</a>
 
     </p>
+    
+    <div>
+ 
+     <?php
+     include("config.php");
+     $fetchVideos = mysqli_query($con, "SELECT id, student_name, location, location2 FROM xiid1stud ORDER BY id ASC");
+     while($row = mysqli_fetch_assoc($fetchVideos)){
+       $id = $row['id'];
+       $name = $row['student_name'];
+       $location = $row['location'];
+       $location2 = $row['location2'];
+ 
+         
+            echo "<table border='1'>
+            <tr>
+            <th>SI NO</th>
+            <th>student name</th>
+            <th>webcam</th>
+            <th>screen recording</th>
+            </tr>";
+       echo "<td>'".$id."'</a></td>";
+       echo "<td>'".$name."'</a></td>";
+       echo "<td><a href='../../classes/logdin/uploads/".$location."' > Webcam </a></td>";
+       echo "<td><a href='../../classes/logdin/uploads/".$location2."' > Screen recording </a></td>";
+       echo "</table>";
+     }
+     ?>
 </body>
 </html>
