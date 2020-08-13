@@ -38,7 +38,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $sql = "SELECT id, username, password FROM xiiauser WHERE username = ?";
 
-
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
