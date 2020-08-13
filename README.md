@@ -10,5 +10,5 @@ The Face tracking models were made and trained with the help of teachablemachine
 The files being uploaded by students and being viewed by the teachers is still in works however, there's a small demo of video uploads is the folder named uploads.<br><br>
 
 **Installation**<br>
-simply add all these files to the public folder and open phpmyAdmin and exectude the MySQL commands in your database to creat tables. Then configure your server in all the config.php files to connect the website to your database. 
+simply add all these files to the public folder and open phpmyAdmin and Import the MySQL database in PhpMyAdmn. Then configure your server in all the config.php and php.ini files to connect the website to your database. 
 
